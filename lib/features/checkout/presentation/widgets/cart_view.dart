@@ -130,7 +130,7 @@ class CartView extends ConsumerWidget {
                               ),
                               child: Text(
                                 '${cartState.discountPercentage.toStringAsFixed(0)}%',
-                                style: const TextStyle(
+                                style: TextStyle(
                                     fontSize: 12, color: Colors.green),
                               ),
                             ),
@@ -142,7 +142,7 @@ class CartView extends ConsumerWidget {
                       ),
                       Text(
                         '-\$${(cartState.subtotal + cartState.tax - cartState.total).toStringAsFixed(2)}',
-                        style: const TextStyle(color: Colors.green),
+                        style: TextStyle(color: Colors.green),
                       ),
                     ],
                   ),
